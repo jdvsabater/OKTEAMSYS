@@ -1,5 +1,5 @@
-include ../views/navbarDefault.pug
-
+extends navbarDefault.pug
+block content
   h1 WITHDRAW  
     form(action='/withdraw/'+getID+'?_method=PUT' method="POST")
         .form-group
