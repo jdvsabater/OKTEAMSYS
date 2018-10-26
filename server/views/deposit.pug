@@ -1,0 +1,12 @@
+extends navbarDefault.pug
+
+
+block content
+  h1 DEPOSIT  
+    form(action='/deposit/'+getID+'?_method=PUT' method="POST")
+        .form-group
+          label How much will you deposit?
+          input.form-control#deposit(type="text " name="deposit" onkeypress="return isNumber(event)")
+        .form-group
+          button.btn.btn-primary(type="submit") Deposit
+block footer

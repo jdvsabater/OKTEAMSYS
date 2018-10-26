@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    title= title
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css")
+    link(href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css")
+    script(src="js/bootstrap.min.js")
+    script(src="jquery.min.js")
+    link(rel="stylesheet" href="style.css" type="text/css")
+    link(rel="stylesheet" href="font-awesome.min.css")
+    body
+    div.container
+      div.login
+        h1.login-heading
+          strong Welcome to Onionbank
+        form(method='post')
+          input.input-txt(type='password', name='accNumber', placeholder='Account Number', required='required' onkeypress="return isNumber(event)")
+          input.input-txt(type='password', name='passcode', placeholder='Passcode', required='required' onkeypress="return isNumber(event)")
+          .login-footer
+           
+            button.btn.btn--right(type='submit') Sign in  
+
+
+  
+script(src="/isNumber.js")                
+script(src="/axios.min.js")
+script(src="/vue.js")
+    //-input(type="password" class="form-control" name="accNumber" placeholder="Account Number" required="required" onkeypress="return isNumber(event)")
+              
+           
+              //-input(type="password" class="form-control" name="passcode" placeholder="Passcode" required="required" onkeypress="return isNumber(event)")

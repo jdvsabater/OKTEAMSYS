@@ -1,0 +1,31 @@
+{
+	"users": [
+		{
+			"id": 1,
+			"accNumber": "123",
+			"passcode": "123",
+			"name": "Chito man",
+			"balance": 11,
+			"contact": "09123451234",
+			"load": 20
+		},
+		{
+			"id": 2,
+			"accNumber": "456",
+			"passcode": "456",
+			"name": "Kiko man",
+			"balance": 1006,
+			"contact": "09123498764",
+			"load": 60
+		},
+		{
+			"id": 3,
+			"accNumber": "567",
+			"passcode": "567",
+			"name": "Bibo man",
+			"balance": 1000,
+			"contact": "09125451294",
+			"load": 0
+		}
+	]
+}

@@ -1,0 +1,54 @@
+{
+	"payments": [],
+	"1payments": [
+		{
+			"id": 1,
+			"name": "MERALCO",
+			"pay": 946
+		},
+		{
+			"id": 2,
+			"name": "PLDT",
+			"pay": 4988
+		},
+		{
+			"id": 3,
+			"name": "Maynilad",
+			"pay": 2500
+		}
+	],
+	"2payments": [
+		{
+			"id": 1,
+			"name": "MERALCO",
+			"pay": 9500
+		},
+		{
+			"id": 2,
+			"name": "PLDT",
+			"pay": 5000
+		},
+		{
+			"id": 3,
+			"name": "Maynilad",
+			"pay": 2500
+		}
+	],
+	"3payments": [
+		{
+			"id": 1,
+			"name": "MERALCO",
+			"pay": 10000
+		},
+		{
+			"id": 2,
+			"name": "PLDT",
+			"pay": 5000
+		},
+		{
+			"id": 3,
+			"name": "Maynilad",
+			"pay": 2500
+		}
+	]
+}

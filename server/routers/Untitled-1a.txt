@@ -1,0 +1,51 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    title= title
+    link(href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css")
+    script(src="js/bootstrap.min.js")
+    script(src="//code.jquery.com/jquery-1.11.1.min.js")
+    link(rel="stylesheet" href="../login.css" type="text/css")
+    
+<!-- Bootstrap core CSS -->
+    link(href="../navbar.css" rel="stylesheet")
+
+<!-- Custom styles for this template -->
+    link(href="../navbarfooter.css" rel="stylesheet")
+    body
+    main(role="main" class="container")
+       header
+          nav(class="navbar navbar-expand-md navbar-dark fixed-top bg-dark")
+            a(class="navbar-brand" href="#") 
+            button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation")
+              
+            
+            div(class="collapse navbar-collapse" id="navbarCollapse")
+              ul(class="navbar-nav mr-auto")
+                li(class="nav-item active")
+                  a(class="nav-link" href="/home") Home 
+                li(class="nav-item")
+                  a(class="nav-link" href="/fundTransfer") Fund transfer
+                li(class="nav-item")
+                  a(class="nav-link" href="/checkBalance") Check Balance
+                li(class="nav-item")
+                  a(class="nav-link" href="/deposit") Deposit
+                li(class="nav-item")
+                  a(class="nav-link" href="/withdraw") Withdraw
+                li(class="nav-item")
+                  a(class="nav-link" href="/transactionHistory") Transaction History
+                li(class="nav-item")
+                  a(class="nav-link" href="billsPayment") Bills Payment      
+                li(class="nav-item")
+                  a(class="nav-link" href="eLoad") E-LOAD
+!= messages('message', locals)
+block content
+    
+          
+block footer
+script(src="/isNumber.js")                
+script(src="/axios.min.js")
+script(src="/vue.js")
+    

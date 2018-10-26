@@ -1,0 +1,20 @@
+extends navbarDefault.pug
+block content
+ h1 E LOAD  #{getID}
+    form(action='/eload/'+getID+'?_method=PUT' method="POST")
+        .form-group
+          label Enter Mobile Number
+          input.form-control#deposit(type="text" name="contact" onkeypress="return isNumber(event)" maxlength="11")
+        .form-group
+          div
+            label Example
+        select(name="load" id="load_value" type="number")
+            option(value="10" ) 10
+            option(value="20" ) 20
+            option(value="30" ) 30
+        
+
+        .form-group
+          button.btn.btn-primary(type="submit") Confirm
+
+block footer

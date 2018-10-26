@@ -1,0 +1,16 @@
+extends navbarDefault.pug
+block content
+
+  h1 FUND TRANSFER  
+    form(action='/fundTransfer/'+getID+'?_method=PUT' method="POST")
+        .form-group
+          label Enter Account number of transferring?
+          input.form-control#deposit(type="text" name="accNumber" onkeypress="return isNumber(event)")
+        .form-group
+          label How much will you transfer?
+          input.form-control#deposit(type="text" name="transfer" onkeypress="return isNumber(event)")
+
+        .form-group
+          button.btn.btn-primary(type="submit") Confirm
+block footer
+    

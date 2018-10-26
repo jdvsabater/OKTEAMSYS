@@ -1,0 +1,9 @@
+include ../views/navbarDefault.pug
+
+  h1 WITHDRAW  
+    form(action='/withdraw/'+getID+'?_method=PUT' method="POST")
+        .form-group
+          label How much will you WITHDRAW?
+          input.form-control#deposit(type="text" name="deposit" onkeypress="return isNumber(event)")
+        .form-group
+          button.btn.btn-primary(type="submit") Deposit

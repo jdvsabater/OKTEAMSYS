@@ -1,0 +1,21 @@
+extends navbarDefault.pug
+block content
+
+ h1 BILLS PAYMENT 
+    form(action='/billsPayment/'+getID+'?_method=PUT' method="POST")
+        
+        .form-group
+          div
+            label
+        select(name="paymentType" id="load_value" type="number")
+            option(value="1" ) Meralco
+            option(value="2" ) PLDT
+            option(value="3" ) Maynilad
+        .form-group
+          label Enter Amount
+          input.form-control#deposit(type="number" name="text" onkeypress="return isNumber(event)")
+
+        .form-group
+          button.btn.btn-primary(type="submit") Confirm
+
+    
